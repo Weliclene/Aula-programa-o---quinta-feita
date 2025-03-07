@@ -3,32 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
+    <title>Tela de Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="#">inicio</a></li>
-            <li><a href="#">historia</a></li>
-            <li></li>
-            <a>cadastro</a>
-            <li><a href="#">cliente pf</a></li>
-            <li><a href="#">cliente pj</a></li>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Cadastro</a></li>
+            <li><a href="#">Cliente PF</a></li>
+            <li><a href="#">Cliente PJ</a></li>
+            <li><a href="#">Contato</a></li>
         </ul>
-        <li>
-            <li><a href="#">contato</a></li>
-       </ul>
     </nav>
+
     <h2>Login Senac</h2>
-    <form>
+
+    <form action="#" method="POST">
         <div class="input-group">
-            <label for ="txtUsuario">Usuário</label>
-           <input type="text" id="txtUsuario" name="txtUsuario" placeholder="digite seu nome">
+            <label for="txtUsuario">Usuário</label>
+            <input type="text" id="txtUsuario" name="txtUsuario" placeholder="Digite seu nome" required>
         </div>
+        
+        <div class="input-group">
+            <label for="txtSenha">Senha</label>
+            <input type="password" id="txtSenha" name="txtSenha" placeholder="Digite sua senha" required>
+        </div>
+        
         <div>
-            <label for="txtSenha">Usuário</label>
-            <input type="text" id="txtSenha" name="txtSenha" placeholder="digite sua senha">
+            <button type="submit">Entrar</button>
         </div>
     </form>
 </body>
