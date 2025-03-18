@@ -59,6 +59,11 @@ Desenvolvimento de um site de notícias simples e responsivo utilizando HTML e C
 
 ---
 
+## Tela de Login
+
+- **Login:** Foi adicionada uma tela de login simples, com campos para o usuário digitar o e-mail e a senha. A validação de login foi implementada para aceitar as credenciais do usuário weliclene e senha weliclene10. Caso o login seja bem-sucedido, o usuário é redirecionado para a página principal do site.
+- **Estilo Simples e Clean:** Foi utilizado um estilo simples e clean com cores como vermelho claro. O uso de vermelho foi aplicado também de forma discreta, para elementos importantes (como links).
+
 ## Prazos
 
 - **Entrega inicial:** 2 semanas.
