@@ -1,6 +1,6 @@
 # Repositório Git: https://github.com/Weliclene/Aula-programa-o---quinta-feita
 
-# Cliente: Lucas Vidal
+# Cliente: Eduardo Mendes
 
 # Documentação do Projeto - Site de Notícias
 
