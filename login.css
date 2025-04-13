@@ -1,0 +1,79 @@
+/* Container de login */
+.login-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #cc0000;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Grupo de entrada */
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #cc0000;
+  outline: none;
+}
+
+/* Botão de login */
+.login-container button {
+  background-color: #cc0000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.login-container button:hover {
+  background-color: #a30000;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-container h2 {
+    font-size: 24px;
+  }
+
+  .input-group input {
+    font-size: 14px;
+  }
+
+  .login-container button {
+    font-size: 14px;
+  }
+}

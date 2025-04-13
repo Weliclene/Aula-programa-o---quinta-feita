@@ -1,0 +1,112 @@
+/* Reset e estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Menu de navegação */
+  .menu nav {
+    background-color: #cc0000;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+  }
+  
+  .menu nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .menu nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Seção de contato */
+  #contato {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #contato h1 {
+    color: #cc0000;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  #contato p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Formulário */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 100%;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #cc0000;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    background-color: #cc0000;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #a30000;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    #contato {
+      padding: 20px;
+    }
+  
+    .menu nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
