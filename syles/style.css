@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; 
+    top: 20px; 
+    right: 20px;
+    z-index: 999; 
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px; 
+    margin-bottom: 10px; 
+}
+
+#search input[type="search"] {
+    padding: 4px 8px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1;
+    max-width: 130px;
+}
+
+#search button {
+    background: linear-gradient(135deg, #80868b, #899bad); 
+    color: white;
+    border: none;
+    padding: 8px 14px; 
+    border-radius: 6px; 
+    cursor: pointer;
+    font-size: 0.9em; 
+    transition: background 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#search button:active {
+    transform: scale(1);
+}
+
+#weather {
+    max-width: 220px;
+    padding: 8px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+}
+
+#title {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+#temp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+#temp img {
+    width: 30px;
+}

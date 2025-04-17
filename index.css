@@ -68,20 +68,3 @@ body {
     padding: 20px;
     font-weight: normal;
   }
-  
-  /* Certificando-se de que o header ocupe toda a largura da tela */
-header {
-  width: 100%;
-  padding: 10px 20px;
-  position: fixed; /* Deixa o logo fixo no topo */
-  top: 0;
-  left: 0;
-  background-color: #fff;
-  z-index: 10; /* Garante que o logo fique acima de outros elementos */
-}
-
-/* Estilo para o logo */
-.logo {
-  height: 50px; /* Ajuste conforme o tamanho desejado para o logo */
-  width: auto; /* Ajusta a largura proporcionalmente à altura */
-}

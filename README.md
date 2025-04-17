@@ -40,6 +40,7 @@ Desenvolvimento de um site de notícias simples e responsivo utilizando HTML e C
 - **Formulário de Contato:** Campos obrigatórios (nome, e-mail e mensagem).
 - **Imagens Responsivas:** Imagens no tamanho máximo de 600px de largura.
 - **Links nas Notícias:** Cada notícia possui link que leva à página de detalhes.
+- **API relacioanda temperatura:** O site contara com um campo onde o internaura poderá consultar a temperatura do lugar que quiser.
 
 ---
 
@@ -67,7 +68,8 @@ Desenvolvimento de um site de notícias simples e responsivo utilizando HTML e C
 ## Prazos
 
 - **Entrega inicial:** 2 semanas.
-- **Ajustes:** 5 dias após feedback.
+- **Entrega atual:** 01/05/2025.
+- **Ajustes:** Integração da API.
 
 ---
 
