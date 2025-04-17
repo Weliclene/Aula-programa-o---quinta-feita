@@ -5,7 +5,7 @@
 # Documentação do Projeto - Site de Notícias
 
 ## Objetivo
-Desenvolvimento de um site de notícias simples e responsivo utilizando HTML e CSS, com 4 páginas principais: **Home**, **Notícias**, **Sobre** e **Contato**.
+Desenvolvimento de um site de notícias simples e responsivo utilizando HTML, CSS e JavaScript, com 4 páginas principais: **Home**, **Notícias**, **Sobre** e **Contato**, além de integração com uma **API de clima**.
 
 ---
 
@@ -14,66 +14,95 @@ Desenvolvimento de um site de notícias simples e responsivo utilizando HTML e C
 1. **Home:**
    - Exibe uma notícia principal com título, resumo e imagem.
    - Lista de últimas notícias com links para detalhes.
+   - Campo de busca para consultar o clima de qualquer cidade.
 
 2. **Notícias:**
-   - Exibe lista de notícias com título, imagem e resumo.
-   - Links redirecionando para a página de detalhes de cada notícia.
+   - Lista de notícias com título, imagem e resumo.
+   - Links para a página de detalhes de cada notícia.
 
 3. **Sobre:**
-   - Descrição simples do site e sua criação, explicando o uso de HTML e CSS.
+   - Descrição do site e da proposta de criação com HTML e CSS.
 
 4. **Contato:**
-   - Formulário de contato com campos para nome, e-mail e mensagem.
-   - Validação simples para garantir preenchimento dos campos obrigatórios.
+   - Formulário com campos para nome, e-mail e mensagem.
+   - Validação simples para campos obrigatórios.
+
+5. **Login:**
+   - Tela de login com autenticação simples.
+   - Usuário: **weliclene**
+   - Senha: **weliclene10**
+   - Após login válido, redireciona para a Home.
 
 ---
 
 ## Requisitos de Design
 
-- **Estilo Simples e Clean:** Utilização de cores neutras (branco, cinza, vermelho) para garantir boa legibilidade.
-- **Menu de Navegação:** Navegação fixa no topo com links para Home, Notícias, Sobre e Contato.
+- **Layout clean e moderno:** uso de branco, cinza e vermelho.
+- **Menu de Navegação:** fixo no topo com links para as páginas principais.
+- **Imagens Responsivas:** limite de 600px de largura.
+- **Fonte:** Arial, para leitura simples e limpa.
+- **Responsividade:** adaptável a diferentes tamanhos de tela.
 
 ---
 
 ## Funcionalidades
 
-- **Formulário de Contato:** Campos obrigatórios (nome, e-mail e mensagem).
-- **Imagens Responsivas:** Imagens no tamanho máximo de 600px de largura.
-- **Links nas Notícias:** Cada notícia possui link que leva à página de detalhes.
-- **API relacioanda temperatura:** O site contara com um campo onde o internaura poderá consultar a temperatura do lugar que quiser.
+- **Formulário de Contato:** validação para garantir preenchimento dos campos.
+- **Consulta de Clima (API):** o usuário pode buscar a temperatura de qualquer cidade.
+- **Login Simples:** verificação básica de usuário e senha.
+- **Links nas Notícias:** acesso fácil ao conteúdo detalhado de cada notícia.
 
 ---
 
 ## Tecnologias Usadas
 
-- **HTML:** Para estruturação do conteúdo.
-- **CSS:** Para estilização e responsividade.
-- **Validação de Formulário:** Simples validação HTML para garantir campos obrigatórios.
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **API OpenWeatherMap** (para previsão do tempo)
 
 ---
 
-## Estilo Visual
+## Regras de Negócio da API
 
-- **Cores:** Paleta simples com fundo claro e texto escuro.
-- **Fontes:** Arial, para fácil leitura.
-- **Responsividade:** Layout flexível que se ajusta a diferentes tamanhos de tela.
+### API: OpenWeatherMap
+
+- **Chave utilizada:** `4a89104f6a1323d25586384a036803f6`
+- O campo de cidade deve estar preenchido.
+- Exibe:
+  - Temperatura atual
+  - Temperatura máxima e mínima
+  - Descrição do clima (ensolarado, nublado, etc)
+  - Umidade do ar
+  - Velocidade do vento
+- Retorno em tempo real da temperatura com base na cidade pesquisada.
 
 ---
-
-## Tela de Login
-
-- **Login:** Foi adicionada uma tela de login simples, com campos para o usuário digitar o e-mail e a senha. A validação de login foi implementada para aceitar as credenciais do usuário weliclene e senha weliclene10. Caso o login seja bem-sucedido, o usuário é redirecionado para a página principal do site.
-- **Estilo Simples e Clean:** Foi utilizado um estilo simples e clean com cores como vermelho claro. O uso de vermelho foi aplicado também de forma discreta, para elementos importantes (como links).
 
 ## Prazos
 
-- **Entrega inicial:** 2 semanas.
-- **Entrega atual:** 01/05/2025.
-- **Ajustes:** Integração da API.
+- **Entrega inicial:** 2 semanas
+- **Ajustes finais:** Integração da API e testes de responsividade
+- **Entrega final:** 01/05/2025
+
+---
+
+## Ata do Projeto
+
+| Data       | Tarefa                                                                      
+|------------|------------------------------------------------
+| 20/03/2025 | Escolha do tema: site de notícias                                           
+| 25/03/2025 | Estrutura HTML criada                                                       
+| 01/04/2025 | Finalização do CSS base, menu e página "Sobre"                              
+| 08/04/2025 | Formulário de contato com validação                                         
+| 13/04/2025 | Integração da API do clima                                                  
+| 17/04/2025 | Inserção da logo e ajustes visuais finais                                   
+| 25/04/2025 | Testes de funcionalidade e responsividade                                   
+| 01/05/2025 | Entrega final e documentação                                                
 
 ---
 
 ## Contato
 
-- **Desenvolvedor:** Weliclene Pedroza
+- **Desenvolvedor:** Weliclene Pedroza  
 - **E-mail:** weliclene.inacio.pedroza@hotmail.com
