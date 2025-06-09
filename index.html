@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,93 +10,96 @@
   <link rel="stylesheet" href="src/javascript/">
 
 </head>
+
 <body>
+
+  <script>
+    if (!localStorage.getItem("logado")) {
+      window.location.href = "login.html";
+    }
+  </script>
+
   <div id="container">
     <form id="search">
-        <i class="fa-solid fa-location-dot"></i>
-        <input 
-            type="search" 
-            name="city_name" 
-            id="city_name" 
-            placeholder="Buscar cidade"
-        >
-        <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="search" name="city_name" id="city_name" placeholder="Buscar cidade">
+      <button type="submit">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
     </form>
 
     <div id="weather">
-        <h1 id="title">São Paulo, BR</h1>
+      <h1 id="title">São Paulo, BR</h1>
 
-        <div id="infos">
-            <div id="temp">
-                <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
-                
-                <div>
-                    <p id="temp_value">
-                        25 
-                    </p>
-                    <p id="temp_description">
-                        Ensolarado
-                    </p>
-                </div>
-            </div>
+      <div id="infos">
+        <div id="temp">
+          <img id="temp_img" src="http://openweathermap.org/img/wn/04d@2x.png" alt="">
 
-            <div id="other_infos">
-                <div class="info">
-                    <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
-
-                    <div>
-                        <h2>Temp. max</h2>
-
-                        <p id="temp_max">
-                            32 <sup>C°</sup>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="info">
-                    <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
-
-                    <div>
-                        <h2>Temp. min</h2>
-
-                        <p id="temp_min">
-                            12 <sup>C°</sup>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="info">
-                    <i id="humidity_icon" class="fa-solid fa-droplet"></i>
-
-                    <div>
-                        <h2>Humidade</h2>
-
-                        <p id="humidity">
-                            50%
-                        </p>
-                    </div>
-                </div>
-
-                <div class="info">
-                    <i id="wind_icon" class="fa-solid fa-wind"></i>
-
-                    <div>
-                        <h2>Vento</h2>
-
-                        <p id="wind">
-                            50 km/h
-                        </p>
-                    </div>
-                </div>
-            </div>
+          <div>
+            <p id="temp_value">
+              25
+            </p>
+            <p id="temp_description">
+              Ensolarado
+            </p>
+          </div>
         </div>
+
+        <div id="other_infos">
+          <div class="info">
+            <i id="temp_max_icon" class="fa-solid fa-temperature-high"></i>
+
+            <div>
+              <h2>Temp. max</h2>
+
+              <p id="temp_max">
+                32 <sup>C°</sup>
+              </p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i id="temp_min_icon" class="fa-solid fa-temperature-low"></i>
+
+            <div>
+              <h2>Temp. min</h2>
+
+              <p id="temp_min">
+                12 <sup>C°</sup>
+              </p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i id="humidity_icon" class="fa-solid fa-droplet"></i>
+
+            <div>
+              <h2>Humidade</h2>
+
+              <p id="humidity">
+                50%
+              </p>
+            </div>
+          </div>
+
+          <div class="info">
+            <i id="wind_icon" class="fa-solid fa-wind"></i>
+
+            <div>
+              <h2>Vento</h2>
+
+              <p id="wind">
+                50 km/h
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="alert"></div>
-</div>
-<script src="src/javascript/script.js"></script>
+  </div>
+  <script src="src/javascript/script.js"></script>
 
 
 
@@ -104,7 +108,7 @@
       <a href="index.html">Home</a>
       <a href="noticias.html">Notícias</a>
       <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a> 
+      <a href="contato.html">Contato</a>
     </nav>
   </div>
 
@@ -127,72 +131,73 @@
     </article>
 
     <article class="noticia">
-        <img src="Imagens/aviao.png" alt="Notícia 4">
-        <h3>O dia em que um avião da Varig caiu na Amazônia por causa de uma vírgula…</h3>
-      </article>
+      <img src="Imagens/aviao.png" alt="Notícia 4">
+      <h3>O dia em que um avião da Varig caiu na Amazônia por causa de uma vírgula…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/ataque.png" alt="Imagem 5">
-        <h3>Ataque mata 34 em novo alvo de Putin na Ucrânia; veja vídeo</h3>
-      </article>
+      <img src="Imagens/ataque.png" alt="Imagem 5">
+      <h3>Ataque mata 34 em novo alvo de Putin na Ucrânia; veja vídeo</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/congelar.png" alt="Imagem 6">
-        <h3>Brasil precisa congelar salário mínimo por seis anos, diz Armínio Fraga…</h3>
-      </article>
+      <img src="Imagens/congelar.png" alt="Imagem 6">
+      <h3>Brasil precisa congelar salário mínimo por seis anos, diz Armínio Fraga…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/the last.png" alt="Imagem 7">
-        <h3>The Last of Us: onde assistir e tudo que você precisa saber da 2ª temporada…</h3>
-      </article>
+      <img src="Imagens/the last.png" alt="Imagem 7">
+      <h3>The Last of Us: onde assistir e tudo que você precisa saber da 2ª temporada…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/minsitro.png" alt="Imagem 8">
-        <h3>Dino mantém decisão do TJ que vetou troca de nome da GCM de São Paulo…</h3>
-      </article>
+      <img src="Imagens/minsitro.png" alt="Imagem 8">
+      <h3>Dino mantém decisão do TJ que vetou troca de nome da GCM de São Paulo…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/sorocaba.png" alt="Imagem 9">
-        <h3>União Brasil ignora investigação da PF em Sorocaba e espera filiar Rodrigo Manga</h3>
-      </article>
+      <img src="Imagens/sorocaba.png" alt="Imagem 9">
+      <h3>União Brasil ignora investigação da PF em Sorocaba e espera filiar Rodrigo Manga</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/jake.png" alt="Imagem 10">
-        <h3>Jake Paul revela negociações ousadas para enfrentar campeões mundiais de boxe…</h3>
-      </article>
+      <img src="Imagens/jake.png" alt="Imagem 10">
+      <h3>Jake Paul revela negociações ousadas para enfrentar campeões mundiais de boxe…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/caindo.png" alt="Imagem 11">
-        <h3>Caiado vive fogo amigo do União Brasil e cerco do PL contra candidatura…</h3>
-      </article>
+      <img src="Imagens/caindo.png" alt="Imagem 11">
+      <h3>Caiado vive fogo amigo do União Brasil e cerco do PL contra candidatura…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/china.png" alt="Imagem 12">
-        <h3>Ricos vigiados e só um partido no poder: China é socialista ou capitalista?…</h3>
-      </article>
+      <img src="Imagens/china.png" alt="Imagem 12">
+      <h3>Ricos vigiados e só um partido no poder: China é socialista ou capitalista?…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/aragao.png" alt="Imagem 13">
-        <h3>'Moleque atrevido' aos 76, Jorge Aragão nega aposentadoria: 'Não consigo'…</h3>
-      </article>
+      <img src="Imagens/aragao.png" alt="Imagem 13">
+      <h3>'Moleque atrevido' aos 76, Jorge Aragão nega aposentadoria: 'Não consigo'…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/policia .png" alt="Imagem 14">
-        <h3>SP: Ambulante senegalês morto pela PM deixa companheira grávida de 7 meses…</h3>
-      </article>
+      <img src="Imagens/policia .png" alt="Imagem 14">
+      <h3>SP: Ambulante senegalês morto pela PM deixa companheira grávida de 7 meses…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/povo.png" alt="Imagem 15">
-        <h3>Povo isolado que já peitou colonizadores enfrenta nova 'praga': influencers…</h3>
-      </article>
+      <img src="Imagens/povo.png" alt="Imagem 15">
+      <h3>Povo isolado que já peitou colonizadores enfrenta nova 'praga': influencers…</h3>
+    </article>
 
     <article class="noticia">
-        <img src="Imagens/mulher.png" alt="Imagem 6">
-        <h3>As mulheres amam essa coisa de eu estar com um gatão', diz Ana Maria Braga sobre marido</h3>
-      </article>
+      <img src="Imagens/mulher.png" alt="Imagem 6">
+      <h3>As mulheres amam essa coisa de eu estar com um gatão', diz Ana Maria Braga sobre marido</h3>
+    </article>
 
   </main>
-    
+
   </section>
 </body>
+
 </html>
